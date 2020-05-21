@@ -13,8 +13,7 @@
 //   buzz
 
 function fizzBuzz(n) {
-	var i = 1;
-	while (i <= n) {
+	for (let i = 1; i <= n; i++) {
 		if (i % 3 === 0 && i % 5 === 0) {
 			console.log("fizzbuzz");
 		} else if (i % 3 === 0) {
@@ -24,10 +23,7 @@ function fizzBuzz(n) {
 		} else {
 			console.log(i);
 		}
-		i++;
 	}
-
-	//modulo operator
 }
 
-fizzBuzz(15);
+fizzBuzz(5);
